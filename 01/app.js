@@ -4,4 +4,4 @@ const element = document.querySelector(
 );
 const elements = Array.from(element.querySelectorAll("[data-info]"));
 
-console.log('Liczba takich elementów to: ' + elements.length)
+console.log("Liczba takich elementów to: " + elements.length);
