@@ -22,10 +22,15 @@ for (let i = 1; i <= 3; i++) {
 const links = document.querySelectorAll("a");
 console.log(links);
 
-links[0].setAttribute("href", "/");
-links[1].setAttribute("href", "/gallery");
-links[2].setAttribute("href", "/contact");
+for (let i = 0; i <= 2; i++) {
+  links[i].setAttribute("href", menuItems[i].url);
+  links[i].textContent = menuItems[i].text;
+}
 
-links[0].textContent = "start";
-links[1].textContent = "galeria";
-links[2].textContent = "kontakt";
+// links[0].setAttribute("href", "/");
+// links[1].setAttribute("href", "/gallery");
+// links[2].setAttribute("href", "/contact");
+
+// links[0].textContent = "start";
+// links[1].textContent = "galeria";
+// links[2].textContent = "kontakt";
